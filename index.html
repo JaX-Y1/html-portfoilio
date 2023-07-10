@@ -1,35 +1,187 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The epic Website</title>
+    <title>Jackson's Personal Website</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Karma&family=Space+Grotesk&display=swap" rel="stylesheet">
 </head>
 <body>
-    <H1>Welcome to my Website</H1>
-    <h2>I'm an expert web developer</h2>
-    <a href="./public/movie-ranking.html"><h2>Here's my movie ranking</h2></a>
-    <img height="600" src="./assets/images/moverank.png"/>
-    <a href="./public/birthday-invite.html"><h2>My birthday is soon you should come!!</h2></a>
-    <img src="./assets/birthday.png"/>
+<section id="Top">
+<div class="navBar">
+    <div class="navFlex">
+            <div class="navItem one"><a href="#aboutAnchor">About</a></div>
+            <div class="navItem two"><a href="#resumeAnchor">Resume</a></div>
+            <div class="navItem three"><a href="#projectsAnchor">Projects</a></div>
+            <div class="navItem four"><a href="#interestsAnchor">Interests</a></div>
+            <div class="navItem five"><a href="#Contact">Contact</a></div>
+            <div class="navItem six"><a href="#topAnchor"><img src="./images/640px-LaunchStar.jpg" alt="launch star to top of page"/></a></div>           
+    </div>
+</div>
+</section>
+<section id="About">
+    <div id="topAnchor"></div>
+    <div class="pictureContainer">
+         <div class="Titler">
+        <div class="aboutTitle">
+            <h1>Hello</h1>
+            <p style="color: white;">My Name Is Jackson Marshall</p>
+        </div>
+        </div> 
+    </div>
+    <div id="aboutAnchor"></div>
+    <div class="aboutText">
+        <div class="sectionHeader"><h2>About</h2></div>
+        <hr/>
+        <img src="./images/IMG-8504.jpeg" alt="Me, Jackson Marshall"/>
+        <div class="flexCenter">
+            <div class="bioContainer">
+            <p>I am an aspiring web developer and video game creator. I love modding and playing my favorite video games, as well as being apart of a robotics team.</p>
+        </div>
+
+        </div>
+        
+    </div>
+</section>
+<section id="Resume">
+    <div id="resumeAnchor"></div>
+    <div class="sectionHeader"> <h2>Resume</h2></div>
+        <hr/>
+    <div class="flexCenter">
+    <div class="gridContainer">
+        <div class="resume-image-des one">
+            <img src="./images/scsemblem.png" style="border: none;" alt="Southwest Christian School Emblem"/>
+            <h4>Southwest Christian School. Fort Worth, TX.</h4>
+        </div>
+        <div class="resume-description two">
+            <p>I attented SCS for 7 years and graduated as salutatorian. During my highschool years, I really gained a passion for engineering and computer science from my robotics club and STEM-focused electives.</p>
+        </div>
+        <div class="resume-image-des three">
+            <img src="./images/epictyping.gif" alt="Jim Carrey frantically typing"/>
+            <h4>This is what I think I look like while coding.</h4>
+        </div>
+        <div class="resume-description four">
+            <p>I am a perfectionist in almost everything I do. I wanted to become a great coder ever since I realized I could make a robot move with just one line of C++. I love testing boundaries with code, whether it be testing the max load of a drivetrain motor, or seeing how high the coin counter can go in the latest Mario game.  </p>
+        </div>
+        <div class="resume-image-des five">
+            <img src="./images/corngolfer.jpg" alt="a corn on the cob playing golf"/>
+            <h4>I love golfing.</h4>
+        </div>
+        <div class="resume-description six">
+            <p>I have been golfing since my freshman year in highschool. I love going to Topgolf with my family and to the ranges with my friends. </p>
+        </div>
+    </div>
+    </div>
+
+</section>
+<section id="Projects">
+    <div id="projectsAnchor"></div>
+    <div class="sectionHeader"> <h2>Projects</h2></div>
     <hr/>
-    <a href="./public/contact.html">Contact Me</a>
+    <div class="flex-container">
+            <div class="item project-one">
+                <div class="head">
+                    <h3>UnAlienate</h3>
+                </div>
+                <div class="image">
+                    <img src="./images/unalienate.png" alt="fictious alien dating website project"/>
+                </div>
+                <div class="description">
+                    <p>A super legit long-distance dating website for Aliens. This project was my first time creating a full webpage using CSS and Bootstrap.</p>
+                </div>
+            </div>
+            <div class="item project-two">
+                <div class="head">
+                    <h3>Space Slinger</h3>
+                </div>
+                <div class="image">
+                    <img src="./images/spaceSlinger.png" alt="space exploration work in progress video game"/>
+                </div>
+                <div class="description">
+                    <p>My latest project in Unity. It's a WIP space exploration and collectathon game featuring a proximity based GPS system, and somewhat realistic zero gravity physics. You can fly around, destory planets, and cause supernovas!</p>
+                </div>
+            </div>
+            <div class="item project-three">
+                <div class="head">
+                    <h3>Trucker Good Timer</h3>
+                    <h4 style="color: #2E8A99;">(yes this is my robot name)</h4>
+                </div>
+                <div class="image">
+                    <img src="./images/truckergoodtimer.jpg" alt="metal robot"/>
+                </div>
+                <div class="description">
+                    <p>My team of two people created this robot for a robotics balloon popping competition. It features a rubber band powered flipper and dual crossbow launchers. It also features a mecanum drive coded by me.</p>
+                </div>
+            </div>
+
+    </div>
+</section>
+<section id="Interests">
+    <div id="interestsAnchor"></div>
+    <div class="sectionHeader"> <h2>Interests</h2></div>
     <hr/>
-    <a href="./public/about.html">About Me</a>
+    <div class="flex-container">
+        <div class="item project-one">
+            <div class="head">
+                <h3>Video Games</h3>
+            </div>
+            <div class="image">
+                <img src="./images/2023071415092100-02CB906EA538A35643C1E1484C4B947D.jpg" alt="video game character going up a flight of stone stairs, clipping through a barrier that constitutes the height limit"/>
+            </div>
+            <div class="description">
+                <h4>Testing the height limit in Animal Crossing: New Horizons</h4>
+                <p>Playing video games has been my favorite hobby since my early childhood. As I've gotten older, I've developed that interest into modding my favorite video games and testing their limits. My favorite video games are in order as follows: Super Mario Galaxy 1&2, Luigi's Mansion: Dark Moon, Luigi's Mansion 3, Animal Crossing: New Leaf, Need For Speed: Hot Pursuit, Satisfactory, Animal Crossing: New Horizons, and Factorio.</p>
+            </div>
+        </div>
+        <div class="item project-two">
+            <div class="head">
+                <h3>Electronics</h3>
+            </div>
+            <div class="image">
+                <img src="./images/woodCons.jpg" alt="video game controllers with a custom wooden design that differs from the factory design"/>
+            </div>
+            <div class="description">
+                <h4>Wood themed Joycons</h4>
+                <p>One of my more recent hobbies has been dissasembling and customizing my video game controllers. So far I have done 3 sets of joycons and 2 pro controllers for the Nintendo Switch. I want to learn more about consumer electronics and eventually how to start making PCB's for future engineering projects.</p>
+            </div>
+        </div>
+        <div class="item project-three">
+            <div class="head">
+                <h3>Collecting</h3>
+            </div>
+            <div class="image">
+                <img src="./images/SNES3DS.jpg" alt="Super Nintendo Entertainment System themed New 3DS XL"/>
+            </div>
+            <div class="description">
+                <h4>SNES themed New 3DS XL</h4>
+                <p>I love buying and collecting old video game consoles and merchandise from my favorite games. I grew up playing on the Wii and 3DS and have nothing to show for it other than my scratched up Wii console. I started collecting because I want some nolstagic tokens from childhood. My prized pocession right now is a Super Nintendo themed 3DS.</p> 
+            </div>
+        </div>
+</section>
+<section id="Contact">
+    <div id="contactAnchor"></div>
+    <div class="sectionHeader"> <h2>Contact Me!</h2></div>
+    <hr/>
+    <div class="contact-container">
+     <h3>Whether you want to talk about your favorite games, interests in robotics and coding, or even about how my website looks, feel free to email me!</h3>
+     <a class="btn" href="mailto:jacksonmancool@gmail.com">Email Me</a>
+    </div>
+</section>
 </body>
+<footer>
+<div class="parentFoot">
+    <div class="otherContacts">
+            <a href="https://www.instagram.com/applejacks3055/">Instagram</a>
+            <a href="https://www.youtube.com/channel/UCN4-7GPc35XVAVqCQ-rBQnw">Youtube</a>
+    </div>
+    <div class="foot">
+        ©Jackson Marshall
+    </div>
+</div>
+
+</footer>
 </html>

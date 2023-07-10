@@ -1,0 +1,385 @@
+/*formatter*/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+p{
+    font-family: 'Karma', serif;
+    line-height: 1.7rem;
+    color: #84A7A1;
+}
+img{
+    border: 4px solid #176B87;
+}
+h3{
+    color: #2E8A99;
+    font-size: 2rem;
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+h4{
+    color: #0C134F;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+a{
+    font-family: 'Karma', serif;
+    text-shadow: 1px 1px 3px black; 
+}
+.sectionHeader{
+    text-align: center;
+    margin-top: 3rem;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: #0E2954;
+}
+.flexCenter{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+hr{
+   width: 50%; 
+   max-width: 500px;
+   border: 6px dotted #176B87;
+   border-bottom: none;
+   border-left: none;
+   border-right: none;
+   margin-bottom: 3rem;
+}
+
+/*navBar section*/
+
+#topAnchor{
+    position: relative;
+    visibility: hidden;
+    top: -50px;
+}
+.navBar{
+    z-index: 1;
+    background-color: rgb(30, 30, 134);
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    left: 0px;
+    top: 0px;
+    justify-content: start;
+}
+.navFlex{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    gap: 1rem;
+    justify-content: start;
+    align-items: center;
+    padding-left: 1rem;
+}
+.navFlex a{
+    color: white;
+    text-decoration: none;
+}
+.navFlex .six{
+    flex: auto 1 0;
+    text-align: end;
+    margin-right: 50px;
+    margin-top: 10px;
+    order: 2;
+    
+}
+.navFlex .six img{
+    
+    height: 50px;
+    width: 50px;
+    border: none;
+}
+
+
+/*About Section*/
+
+#aboutAnchor{
+    position: relative;
+    visibility: hidden;
+    
+}
+.pictureContainer{
+    display: block;
+    position: relative;
+   background-color: rgb(16, 16, 80);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+    height: 720px;
+    margin-top: 50px;
+   
+    padding: 0px;
+    background-image:url(./images/gatewaygalaxy.jpg)
+}
+.Titler{
+    height: 600px;
+    
+    color: white;
+    position: absolute;
+    margin-left: 12%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.aboutTitle{
+    text-align: left;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.aboutTitle h1{
+    font-size: 4rem;
+}
+.aboutTitle p{
+    font-size: 2rem;
+}
+.aboutText{
+text-align: center;
+
+}
+
+
+.aboutText .bioContainer{
+    
+    min-width: 200px;
+    max-width: 1000px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 100px;
+    border: 3px solid #176B87;
+    border-radius: 30px;
+    
+    
+}
+.aboutText img{
+    width: 250px;
+    clip-path: circle();
+    border-radius: 50%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.bioContainer p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/*Resume Section */
+
+#resumeAnchor{
+    position: relative;
+    visibility: hidden;
+    top: -50px;
+}
+.gridContainer{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 300px minmax(50px, 300px);
+    column-gap: 3rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.gridContainer .resume-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.gridContainer .resume-image-des{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.gridContainer .resume-image-des img{
+width: 300px;
+}
+.gridContainer h4{
+    text-align: center;
+}
+
+
+/*Projects Section*/
+
+#projectsAnchor{
+    position: relative;
+    visibility: hidden;
+    top: -50px;
+}
+#Projects .flex-container{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    gap: 3rem;
+}
+.flex-container .item{
+    display: flex;
+    flex-direction: column;
+}
+.flex-container .item img{
+    width: 400px;
+    max-height: 500px;
+}
+.flex-container .item .description{
+  width: 400px;
+}
+.flex-container .item .head{
+   text-align: center;
+  }
+   #Projects .project-three h4{
+    margin: 0;
+  }
+  #Projects .project-three h3{
+    margin-bottom: 0;
+  }
+
+
+/*Interests Section*/
+
+#interestsAnchor{
+    position: relative;
+    visibility: hidden;
+    top: -50px;
+}
+#Interests .flex-container{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    gap: 3rem;
+}
+
+
+/*Contact Section*/
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 200px;
+    margin-bottom: 4rem;
+}
+.contact-container h3{
+font-size: 1.5rem;
+}
+footer .parentFoot{
+    width: 100%;
+    height: 200px;
+    background-color: blue;
+    background-image: url(./images/twinkling-stars.gif);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+footer .otherContacts{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.otherContacts a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.foot{
+    color: white;
+    text-align: center;
+}
+#Contact a{
+    background-color: #0C134F;
+    padding: 20px;
+    background-image: linear-gradient(#84A7A1, #2E8A99);
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    font-family: 'Anton', sans-serif;
+    
+}
+
+
+/*Media Queries*/
+@media(max-width:1850px){
+    .aboutTitle h1{
+        font-size: 3rem;
+    }
+    .aboutTitle p{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:1500px){
+    .aboutTitle h1{
+        font-size: 3rem;
+    }
+    .aboutTitle p{
+        font-size: 1.17rem;
+    }
+}
+@media(max-width:1100px){
+.Titler{
+    width: 100%;
+    align-items: end;
+    justify-content: center;
+    margin-top: 90px;
+    margin-left: 0;
+}
+.Titler h1{
+    margin-bottom: 0;
+}
+.aboutTitle{
+    text-align: center;
+   
+}
+}
+@media(max-width:800px){
+    .navFlex{
+        justify-content: center;
+    }
+    .navFlex .six{
+        flex: none;
+        text-align: end;
+    }
+    .contact-container h3{
+        font-size: 1.3rem;
+    }
+}
+
+
+@media(max-width:1600px){
+    #Projects .flex-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Interests .flex-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
